@@ -1310,7 +1310,7 @@ static void manageSpeedmasterYTLite(UILongPressGestureRecognizer *gesture, YTMai
     if (gesture.state == UIGestureRecognizerStateBegan) {
         rateBeforeSpeedmaster = delegate.currentPlaybackRate;
         [delegate setPlaybackRate:[speedLabels[ytlInt(@"speedIndex")] floatValue]];
-        [edu setVisible:YES];
+        [edu setVisible:NO];
     }
 
     else if (gesture.state == UIGestureRecognizerStateEnded) {
